@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add meeting</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<div class="baner">
+    <img src="http://1.bp.blogspot.com/-o9Oc3pASDsY/UZoq66107DI/AAAAAAAAAtQ/1KbMc912oLo/s1600/daily-scrum-meeting.jpg">
+    <p>Lista Spotkań</p>
+</div>
+<a href="/">Powrót do listy spotkań</a>
+<div class="blok">
+    <h3 style="color: red">Dodaj spotkanie</h3>
+
+    <form method="post" action="/addmeeting" th:object="${meeting}">
+
+        <div class="row text-muted">
+            <div class="col-md-1">
+                <p class="font-weight-bold">Tytuł</p>
+            </div>
+            <input type="text" th:field="*{title}"/><br>
+        </div>
+        <br>
+        <hr>
+        <div class="row text-muted">
+            <div class="col-md-1">
+                <p class="font-weight-bold">Data spotkania</p>
+            </div>
+            <input type="date" th:field="*{meetingDate}"/><br>
+        </div>
+        <br>
+        <hr>
+        <div class="row text-muted">
+            <div class="col-md-1">
+                <p class="font-weight-bold">Status</p>
+            </div>
+            <div class="col-md-2">
+                <select th:field="*{status}" class="form-control">
+                    <option th:each="o: ${status}" th:value="${o.name()}" th:text="${o.name()}"></option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="modal-body">
+            <div class="row my-1">
+                <div class="col-md-2">
+                    <button id="confirm" type="submit" class="btn btn-block btn-success my-1"> Dodaj</button>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+</body>
+
+<br>
+<h6>Kontakt do organizatora</h6>
+<hr>
+<h6>1234567890</h6>
+<hr>
+
+</body>
+</html>

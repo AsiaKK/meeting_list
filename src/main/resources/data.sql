@@ -1,0 +1,15 @@
+INSERT INTO meeting(title, meeting_date, status)
+VALUES ('Pre_planning_Sprint 0', '2018-03-10', 'FINISHED'),
+ ('TestersMeeting_Sprint 0', '2018-03-23', 'CANCELLED'),
+ ('Pre_planning_Sprint 1', '2018-03-10', 'FINISHED'),
+ ('Planning_Sprint 1', '2018-04-12', 'PLANNED'),
+ ('Retro_Sprint 1', '2018-04-24', 'PLANNED'),
+ ('TestersMeeting_Sprint 1', '2018-04-23', 'PLANNED'),
+ ('Pre_planning_Sprint 2', '2018-05-10', 'PLANNED'),
+ ('Planning_Sprint 2', '2018-05-12', 'PLANNED'),
+ ('Retro_Sprint 2', '2018-05-24', 'PLANNED'),
+ ('TestersMeeting_Sprint 2', '2018-05-23', 'PLANNED'),
+ ('Pre_planning_Sprint 3', '2018-06-10', 'PLANNED'),
+ ('Planning_Sprint 3', '2018-06-12', 'PLANNED'),
+ ('Retro_Sprint 3', '2018-06-24', 'PLANNED'),
+ ('TestersMeeting_Sprint 3', '2018-06-23', 'PLANNED');

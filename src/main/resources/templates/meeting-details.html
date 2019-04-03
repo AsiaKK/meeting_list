@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Meeting details</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<div class="baner">
+    <img src="http://1.bp.blogspot.com/-o9Oc3pASDsY/UZoq66107DI/AAAAAAAAAtQ/1KbMc912oLo/s1600/daily-scrum-meeting.jpg">
+    <p>Lista Spotkań</p>
+</div>
+
+<a href="/">Powrót do listy spotkań</a>
+<div class="blok">
+
+    <h2 th:text="${meeting.title}"></h2>
+    <p th:text="|Data spotkania: ${meeting.meetingDate}|"></p>
+    <p th:text="|Status spotkanie: ${meeting.status}|"></p>
+
+</div>
+<br>
+<hr>
+<h6>Kontakt do organizatora</h6>
+<hr>
+<h6>1234567890</h6>
+<hr>
+</body>
+</html>

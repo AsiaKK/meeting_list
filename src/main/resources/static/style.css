@@ -1,0 +1,61 @@
+a:link {
+    color: darkgreen;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.logo {
+    width: 10em;
+}
+
+.blok {
+    background-color: #ececec;
+    padding-top: 3em;
+}
+
+.blok img {
+    width: 10em;
+    float: left;
+    padding: 8px;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+}
+
+h2, h3, h4, h5, h6 {
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+.baner {
+    background-color: #005f0f;
+    height: 3.5em;
+}
+
+.baner img {
+    width: 5em;
+    float: left;
+    padding: 2px;
+}
+
+.baner p {
+    color: white;
+    font-size: 28pt;
+}
